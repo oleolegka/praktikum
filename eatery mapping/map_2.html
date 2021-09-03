@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_47ed166d5a1b486582e76a02b4e26553 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_47ed166d5a1b486582e76a02b4e26553" ></div>
+        
+</body>
+<script>    
+    
+            var map_47ed166d5a1b486582e76a02b4e26553 = L.map(
+                "map_47ed166d5a1b486582e76a02b4e26553",
+                {
+                    center: [55.7522, 37.6156],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_65bc7a2aef924a5cab93e5dc6cbd1f6b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_47ed166d5a1b486582e76a02b4e26553);
+        
+    
+            var feature_group_e25192de54b64ade9a3a83e3810e54ed = L.featureGroup(
+                {}
+            ).addTo(map_47ed166d5a1b486582e76a02b4e26553);
+        
+    
+        function geo_json_9ceaf7ea81794c68be450a5c68850707_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_9ceaf7ea81794c68be450a5c68850707_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_9ceaf7ea81794c68be450a5c68850707 = L.geoJson(null, {
+                onEachFeature: geo_json_9ceaf7ea81794c68be450a5c68850707_onEachFeature,
+            
+                style: geo_json_9ceaf7ea81794c68be450a5c68850707_styler,
+        });
+
+        function geo_json_9ceaf7ea81794c68be450a5c68850707_add (data) {
+            geo_json_9ceaf7ea81794c68be450a5c68850707
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_9ceaf7ea81794c68be450a5c68850707_add({"bbox": [37.45572, 55.60827, 37.52049, 55.64946], "features": [{"bbox": [37.45572, 55.60827, 37.52049, 55.64946], "geometry": {"coordinates": [[[37.45572, 55.63705], [37.48247, 55.64946], [37.52049, 55.6343], [37.50461, 55.61882], [37.48833, 55.60827], [37.48902, 55.61244], [37.48769, 55.61435], [37.46078, 55.63706], [37.45572, 55.63705]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_258410d362104f8eafc8b310c840d664 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f85362db8c3c48e3b9340241c1d60ddb = $(`<div id="html_f85362db8c3c48e3b9340241c1d60ddb" style="width: 100.0%; height: 100.0%;">Тёплый Стан</div>`)[0];
+            popup_258410d362104f8eafc8b310c840d664.setContent(html_f85362db8c3c48e3b9340241c1d60ddb);
+        
+
+        geo_json_9ceaf7ea81794c68be450a5c68850707.bindPopup(popup_258410d362104f8eafc8b310c840d664)
+        ;
+
+        
+    
+    
+        function geo_json_8a1307c01ec644bdb43e8fee48e6c982_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_8a1307c01ec644bdb43e8fee48e6c982_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_8a1307c01ec644bdb43e8fee48e6c982 = L.geoJson(null, {
+                onEachFeature: geo_json_8a1307c01ec644bdb43e8fee48e6c982_onEachFeature,
+            
+                style: geo_json_8a1307c01ec644bdb43e8fee48e6c982_styler,
+        });
+
+        function geo_json_8a1307c01ec644bdb43e8fee48e6c982_add (data) {
+            geo_json_8a1307c01ec644bdb43e8fee48e6c982
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_8a1307c01ec644bdb43e8fee48e6c982_add({"bbox": [37.51166, 55.66845, 37.55556, 55.68993], "features": [{"bbox": [37.51166, 55.66845, 37.55556, 55.68993], "geometry": {"coordinates": [[[37.51166, 55.67973], [37.53005, 55.68993], [37.54749, 55.68083], [37.55226, 55.68403], [37.55556, 55.68213], [37.53988, 55.66845], [37.53189, 55.66852], [37.52911, 55.67139], [37.51166, 55.67973]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_25df7da5a23644fc90d5c532d7414148 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be2c737f8cb547dc9e5beec8e95dd7fd = $(`<div id="html_be2c737f8cb547dc9e5beec8e95dd7fd" style="width: 100.0%; height: 100.0%;">Ломоносовский</div>`)[0];
+            popup_25df7da5a23644fc90d5c532d7414148.setContent(html_be2c737f8cb547dc9e5beec8e95dd7fd);
+        
+
+        geo_json_8a1307c01ec644bdb43e8fee48e6c982.bindPopup(popup_25df7da5a23644fc90d5c532d7414148)
+        ;
+
+        
+    
+    
+        function geo_json_c786036ae6b5403da7f20a81d9493083_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_c786036ae6b5403da7f20a81d9493083_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_c786036ae6b5403da7f20a81d9493083 = L.geoJson(null, {
+                onEachFeature: geo_json_c786036ae6b5403da7f20a81d9493083_onEachFeature,
+            
+                style: geo_json_c786036ae6b5403da7f20a81d9493083_styler,
+        });
+
+        function geo_json_c786036ae6b5403da7f20a81d9493083_add (data) {
+            geo_json_c786036ae6b5403da7f20a81d9493083
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_c786036ae6b5403da7f20a81d9493083_add({"bbox": [37.53909, 55.64946, 37.58563, 55.68213], "features": [{"bbox": [37.53909, 55.64946, 37.58563, 55.68213], "geometry": {"coordinates": [[[37.53909, 55.65574], [37.55516, 55.67064], [37.54607, 55.67323], [37.55556, 55.68213], [37.56299, 55.67789], [37.58563, 55.6701], [37.564, 55.64946], [37.55124, 55.65132], [37.53909, 55.65574]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_2bf094a3b416464cb08e061abd6a9699 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_31ddeb708e894dafa1f5548455ba8682 = $(`<div id="html_31ddeb708e894dafa1f5548455ba8682" style="width: 100.0%; height: 100.0%;">Черёмушки</div>`)[0];
+            popup_2bf094a3b416464cb08e061abd6a9699.setContent(html_31ddeb708e894dafa1f5548455ba8682);
+        
+
+        geo_json_c786036ae6b5403da7f20a81d9493083.bindPopup(popup_2bf094a3b416464cb08e061abd6a9699)
+        ;
+
+        
+    
+    
+        function geo_json_c3d09310a0224da5ba58f26a24f00e67_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_c3d09310a0224da5ba58f26a24f00e67_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_c3d09310a0224da5ba58f26a24f00e67 = L.geoJson(null, {
+                onEachFeature: geo_json_c3d09310a0224da5ba58f26a24f00e67_onEachFeature,
+            
+                style: geo_json_c3d09310a0224da5ba58f26a24f00e67_styler,
+        });
+
+        function geo_json_c3d09310a0224da5ba58f26a24f00e67_add (data) {
+            geo_json_c3d09310a0224da5ba58f26a24f00e67
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_c3d09310a0224da5ba58f26a24f00e67_add({"bbox": [37.43227, 55.63705, 37.50671, 55.68511], "features": [{"bbox": [37.43227, 55.63705, 37.50671, 55.68511], "geometry": {"coordinates": [[[37.43227, 55.66201], [37.43835, 55.6636], [37.44544, 55.66887], [37.45881, 55.67377], [37.47609, 55.68511], [37.47667, 55.68342], [37.47371, 55.67887], [37.47806, 55.67744], [37.48381, 55.67068], [37.49843, 55.66871], [37.50671, 55.66293], [37.50165, 55.65852], [37.45572, 55.63705], [37.45677, 55.64053], [37.43227, 55.66201]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_7919f7c0e7874dc993120bcd27a3e9e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_14b4714332804a4e9263735940e01287 = $(`<div id="html_14b4714332804a4e9263735940e01287" style="width: 100.0%; height: 100.0%;">Тропарёво-Никулино</div>`)[0];
+            popup_7919f7c0e7874dc993120bcd27a3e9e8.setContent(html_14b4714332804a4e9263735940e01287);
+        
+
+        geo_json_c3d09310a0224da5ba58f26a24f00e67.bindPopup(popup_7919f7c0e7874dc993120bcd27a3e9e8)
+        ;
+
+        
+    
+    
+        function geo_json_afdc9111f808430a96a99c3d081651f5_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_afdc9111f808430a96a99c3d081651f5_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_afdc9111f808430a96a99c3d081651f5 = L.geoJson(null, {
+                onEachFeature: geo_json_afdc9111f808430a96a99c3d081651f5_onEachFeature,
+            
+                style: geo_json_afdc9111f808430a96a99c3d081651f5_styler,
+        });
+
+        function geo_json_afdc9111f808430a96a99c3d081651f5_add (data) {
+            geo_json_afdc9111f808430a96a99c3d081651f5
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_afdc9111f808430a96a99c3d081651f5_add({"bbox": [37.43797, 55.70996, 37.49857, 55.74305], "features": [{"bbox": [37.43797, 55.70996, 37.49857, 55.74305], "geometry": {"coordinates": [[[37.43797, 55.73717], [37.44879, 55.73489], [37.48016, 55.74305], [37.49857, 55.72285], [37.49263, 55.72011], [37.49251, 55.7181], [37.48578, 55.71741], [37.48436, 55.71792], [37.48663, 55.71947], [37.48489, 55.72065], [37.47676, 55.72153], [37.4722, 55.71842], [37.4692, 55.719], [37.47208, 55.71699], [37.47059, 55.71584], [37.47144, 55.71382], [37.46802, 55.71367], [37.46858, 55.71482], [37.46694, 55.71561], [37.46369, 55.71383], [37.46787, 55.71261], [37.46702, 55.71142], [37.4547, 55.70996], [37.4452, 55.73239], [37.43797, 55.73717]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_6e2c536148eb4adeac222076ee3a29ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f78a2ab5e0f04082adceaaea60bb8dd1 = $(`<div id="html_f78a2ab5e0f04082adceaaea60bb8dd1" style="width: 100.0%; height: 100.0%;">Фили-Давыдково</div>`)[0];
+            popup_6e2c536148eb4adeac222076ee3a29ed.setContent(html_f78a2ab5e0f04082adceaaea60bb8dd1);
+        
+
+        geo_json_afdc9111f808430a96a99c3d081651f5.bindPopup(popup_6e2c536148eb4adeac222076ee3a29ed)
+        ;
+
+        
+    
+    
+        function geo_json_e40c0d4f18184f0da82df11f320958c4_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_e40c0d4f18184f0da82df11f320958c4_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_e40c0d4f18184f0da82df11f320958c4 = L.geoJson(null, {
+                onEachFeature: geo_json_e40c0d4f18184f0da82df11f320958c4_onEachFeature,
+            
+                style: geo_json_e40c0d4f18184f0da82df11f320958c4_styler,
+        });
+
+        function geo_json_e40c0d4f18184f0da82df11f320958c4_add (data) {
+            geo_json_e40c0d4f18184f0da82df11f320958c4
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_e40c0d4f18184f0da82df11f320958c4_add({"bbox": [37.48247, 55.64219, 37.55516, 55.67369], "features": [{"bbox": [37.48247, 55.64219, 37.55516, 55.67369], "geometry": {"coordinates": [[[37.48247, 55.64946], [37.50165, 55.65852], [37.52414, 55.67367], [37.53297, 55.66823], [37.54094, 55.66858], [37.54459, 55.67369], [37.55516, 55.67064], [37.53909, 55.65574], [37.52537, 55.65731], [37.52276, 55.65529], [37.52118, 55.65605], [37.52003, 55.65516], [37.52189, 55.65464], [37.51343, 55.6482], [37.50889, 55.64994], [37.49851, 55.64219], [37.48247, 55.64946]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_7ea974313d094ad785242056d02d8eb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_883adcacfc134a79b6b153ce54d1921c = $(`<div id="html_883adcacfc134a79b6b153ce54d1921c" style="width: 100.0%; height: 100.0%;">Обручевский</div>`)[0];
+            popup_7ea974313d094ad785242056d02d8eb7.setContent(html_883adcacfc134a79b6b153ce54d1921c);
+        
+
+        geo_json_e40c0d4f18184f0da82df11f320958c4.bindPopup(popup_7ea974313d094ad785242056d02d8eb7)
+        ;
+
+        
+    
+    
+        function geo_json_b3c87736917f4111a8073cf62dfb66c5_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_b3c87736917f4111a8073cf62dfb66c5_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_b3c87736917f4111a8073cf62dfb66c5 = L.geoJson(null, {
+                onEachFeature: geo_json_b3c87736917f4111a8073cf62dfb66c5_onEachFeature,
+            
+                style: geo_json_b3c87736917f4111a8073cf62dfb66c5_styler,
+        });
+
+        function geo_json_b3c87736917f4111a8073cf62dfb66c5_add (data) {
+            geo_json_b3c87736917f4111a8073cf62dfb66c5
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_b3c87736917f4111a8073cf62dfb66c5_add({"bbox": [37.46632, 55.67884, 37.55923, 55.73621], "features": [{"bbox": [37.46632, 55.67884, 37.55923, 55.73621], "geometry": {"coordinates": [[[37.46632, 55.69453], [37.46955, 55.6982], [37.49069, 55.70928], [37.49293, 55.71349], [37.49309, 55.71783], [37.49711, 55.72213], [37.51795, 55.73116], [37.53259, 55.73543], [37.53847, 55.73621], [37.54779, 55.72807], [37.54186, 55.72404], [37.54108, 55.72013], [37.54333, 55.71562], [37.54852, 55.71226], [37.55923, 55.71028], [37.53657, 55.69356], [37.51014, 55.67884], [37.50716, 55.68685], [37.50421, 55.68816], [37.49432, 55.68663], [37.48867, 55.68861], [37.487, 55.68738], [37.4899, 55.68382], [37.48138, 55.68113], [37.47819, 55.6854], [37.46632, 55.69453]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_67c8dd8b869e4a8c97718927b5cbea99 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3aba644d975c45cd90d61d53cf858412 = $(`<div id="html_3aba644d975c45cd90d61d53cf858412" style="width: 100.0%; height: 100.0%;">Раменки</div>`)[0];
+            popup_67c8dd8b869e4a8c97718927b5cbea99.setContent(html_3aba644d975c45cd90d61d53cf858412);
+        
+
+        geo_json_b3c87736917f4111a8073cf62dfb66c5.bindPopup(popup_67c8dd8b869e4a8c97718927b5cbea99)
+        ;
+
+        
+    
+    
+        function geo_json_70f5d417eb324b67b6297c4c191f3122_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_70f5d417eb324b67b6297c4c191f3122_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_70f5d417eb324b67b6297c4c191f3122 = L.geoJson(null, {
+                onEachFeature: geo_json_70f5d417eb324b67b6297c4c191f3122_onEachFeature,
+            
+                style: geo_json_70f5d417eb324b67b6297c4c191f3122_styler,
+        });
+
+        function geo_json_70f5d417eb324b67b6297c4c191f3122_add (data) {
+            geo_json_70f5d417eb324b67b6297c4c191f3122
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_70f5d417eb324b67b6297c4c191f3122_add({"bbox": [37.48684, 55.79112, 37.52044, 55.81535], "features": [{"bbox": [37.48684, 55.79112, 37.52044, 55.81535], "geometry": {"coordinates": [[[37.48684, 55.81535], [37.5195, 55.81517], [37.51101, 55.80608], [37.52044, 55.80374], [37.51835, 55.79349], [37.50389, 55.79112], [37.50258, 55.79498], [37.4879, 55.8121], [37.48684, 55.81535]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_acd4cd3987804def87c4ab156bcd47e0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92ec20e129c64463aa7622d49a77740a = $(`<div id="html_92ec20e129c64463aa7622d49a77740a" style="width: 100.0%; height: 100.0%;">Сокол</div>`)[0];
+            popup_acd4cd3987804def87c4ab156bcd47e0.setContent(html_92ec20e129c64463aa7622d49a77740a);
+        
+
+        geo_json_70f5d417eb324b67b6297c4c191f3122.bindPopup(popup_acd4cd3987804def87c4ab156bcd47e0)
+        ;
+
+        
+    
+    
+        function geo_json_dc96c499f7544dd28bbee423705b895e_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_dc96c499f7544dd28bbee423705b895e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_dc96c499f7544dd28bbee423705b895e = L.geoJson(null, {
+                onEachFeature: geo_json_dc96c499f7544dd28bbee423705b895e_onEachFeature,
+            
+                style: geo_json_dc96c499f7544dd28bbee423705b895e_styler,
+        });
+
+        function geo_json_dc96c499f7544dd28bbee423705b895e_add (data) {
+            geo_json_dc96c499f7544dd28bbee423705b895e
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_dc96c499f7544dd28bbee423705b895e_add({"bbox": [37.47371, 55.66178, 37.52414, 55.68861], "features": [{"bbox": [37.47371, 55.66178, 37.52414, 55.68861], "geometry": {"coordinates": [[[37.47371, 55.67887], [37.47756, 55.68593], [37.48138, 55.68113], [37.4899, 55.68382], [37.487, 55.68738], [37.48867, 55.68861], [37.49432, 55.68663], [37.50421, 55.68816], [37.50716, 55.68685], [37.51014, 55.67884], [37.51166, 55.67973], [37.52414, 55.67367], [37.50654, 55.66178], [37.49843, 55.66871], [37.48438, 55.67035], [37.47806, 55.67744], [37.47371, 55.67887]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_b986cefd5a814143bf762a3e37747215 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22b6618c326f489ea29f3865905079c7 = $(`<div id="html_22b6618c326f489ea29f3865905079c7" style="width: 100.0%; height: 100.0%;">Проспект Вернадского</div>`)[0];
+            popup_b986cefd5a814143bf762a3e37747215.setContent(html_22b6618c326f489ea29f3865905079c7);
+        
+
+        geo_json_dc96c499f7544dd28bbee423705b895e.bindPopup(popup_b986cefd5a814143bf762a3e37747215)
+        ;
+
+        
+    
+    
+        function geo_json_ed9262054297449a84ccfab9362c6f74_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_ed9262054297449a84ccfab9362c6f74_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_ed9262054297449a84ccfab9362c6f74 = L.geoJson(null, {
+                onEachFeature: geo_json_ed9262054297449a84ccfab9362c6f74_onEachFeature,
+            
+                style: geo_json_ed9262054297449a84ccfab9362c6f74_styler,
+        });
+
+        function geo_json_ed9262054297449a84ccfab9362c6f74_add (data) {
+            geo_json_ed9262054297449a84ccfab9362c6f74
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_ed9262054297449a84ccfab9362c6f74_add({"bbox": [37.47495, 55.49131, 37.60454, 55.56032], "features": [{"bbox": [37.47495, 55.49131, 37.60454, 55.56032], "geometry": {"coordinates": [[[37.47495, 55.53349], [37.47552, 55.5373], [37.50777, 55.54295], [37.5145, 55.5485], [37.52919, 55.55525], [37.54488, 55.55202], [37.54882, 55.55263], [37.55215, 55.55487], [37.55447, 55.56026], [37.55834, 55.56032], [37.56053, 55.5574], [37.55973, 55.55434], [37.56756, 55.55498], [37.57389, 55.55354], [37.5774, 55.54911], [37.5893, 55.5572], [37.5785, 55.52168], [37.59872, 55.50813], [37.59665, 55.50542], [37.60454, 55.50242], [37.60255, 55.50045], [37.60415, 55.49871], [37.59529, 55.49318], [37.59028, 55.49339], [37.59134, 55.49131], [37.57218, 55.49914], [37.57713, 55.5172], [37.56618, 55.51708], [37.56688, 55.52029], [37.56536, 55.52044], [37.56478, 55.51841], [37.55814, 55.51395], [37.54703, 55.51272], [37.55396, 55.50967], [37.55257, 55.50552], [37.5481, 55.50594], [37.54766, 55.50456], [37.54177, 55.50379], [37.53404, 55.50579], [37.53259, 55.50284], [37.52976, 55.50391], [37.53029, 55.50816], [37.53505, 55.50833], [37.53993, 55.51351], [37.53512, 55.51796], [37.52011, 55.52248], [37.51937, 55.5255], [37.50192, 55.52768], [37.49775, 55.52676], [37.48936, 55.53], [37.47734, 55.52617], [37.47495, 55.53349]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_c4d80ae1db7f481690e688b96febadae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e5ca6041eff470c81d22debc003b112 = $(`<div id="html_9e5ca6041eff470c81d22debc003b112" style="width: 100.0%; height: 100.0%;">Южное Бутово</div>`)[0];
+            popup_c4d80ae1db7f481690e688b96febadae.setContent(html_9e5ca6041eff470c81d22debc003b112);
+        
+
+        geo_json_ed9262054297449a84ccfab9362c6f74.bindPopup(popup_c4d80ae1db7f481690e688b96febadae)
+        ;
+
+        
+    
+    
+        function geo_json_b69fb618526a4f388a9347ce77cd517d_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_b69fb618526a4f388a9347ce77cd517d_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_b69fb618526a4f388a9347ce77cd517d = L.geoJson(null, {
+                onEachFeature: geo_json_b69fb618526a4f388a9347ce77cd517d_onEachFeature,
+            
+                style: geo_json_b69fb618526a4f388a9347ce77cd517d_styler,
+        });
+
+        function geo_json_b69fb618526a4f388a9347ce77cd517d_add (data) {
+            geo_json_b69fb618526a4f388a9347ce77cd517d
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_b69fb618526a4f388a9347ce77cd517d_add({"bbox": [37.48833, 55.58181, 37.58598, 55.64946], "features": [{"bbox": [37.48833, 55.58181, 37.58598, 55.64946], "geometry": {"coordinates": [[[37.48833, 55.60827], [37.4906, 55.61045], [37.50278, 55.61745], [37.51265, 55.62578], [37.52443, 55.62363], [37.54056, 55.62864], [37.54038, 55.63149], [37.54533, 55.63875], [37.55972, 55.64449], [37.564, 55.64946], [37.58039, 55.64533], [37.57929, 55.6428], [37.582, 55.64122], [37.58221, 55.63854], [37.57727, 55.63268], [37.58598, 55.63117], [37.58435, 55.62668], [37.58139, 55.62407], [37.58263, 55.62324], [37.57475, 55.62005], [37.57889, 55.62009], [37.5805, 55.61939], [37.57593, 55.61551], [37.57809, 55.61476], [37.57463, 55.61323], [37.57568, 55.61179], [37.57469, 55.60882], [37.5698, 55.60807], [37.57187, 55.60599], [37.5749, 55.6066], [37.58177, 55.60349], [37.57767, 55.60017], [37.57909, 55.60082], [37.57824, 55.59982], [37.57934, 55.59969], [37.57671, 55.59929], [37.57666, 55.59787], [37.58057, 55.59776], [37.58024, 55.59581], [37.57897, 55.59591], [37.57714, 55.5917], [37.57748, 55.58635], [37.57368, 55.58221], [37.56955, 55.58181], [37.53042, 55.5907], [37.52724, 55.58966], [37.52629, 55.59162], [37.50655, 55.59825], [37.49118, 55.6101], [37.48833, 55.60827]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_ade18a2b1474404fb438153cfcd68432 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b521f370ca9458b81e27c504caca26e = $(`<div id="html_9b521f370ca9458b81e27c504caca26e" style="width: 100.0%; height: 100.0%;">Ясенево</div>`)[0];
+            popup_ade18a2b1474404fb438153cfcd68432.setContent(html_9b521f370ca9458b81e27c504caca26e);
+        
+
+        geo_json_b69fb618526a4f388a9347ce77cd517d.bindPopup(popup_ade18a2b1474404fb438153cfcd68432)
+        ;
+
+        
+    
+    
+        function geo_json_d65fdef555794746a277749f92360050_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_d65fdef555794746a277749f92360050_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_d65fdef555794746a277749f92360050 = L.geoJson(null, {
+                onEachFeature: geo_json_d65fdef555794746a277749f92360050_onEachFeature,
+            
+                style: geo_json_d65fdef555794746a277749f92360050_styler,
+        });
+
+        function geo_json_d65fdef555794746a277749f92360050_add (data) {
+            geo_json_d65fdef555794746a277749f92360050
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_d65fdef555794746a277749f92360050_add({"bbox": [37.48929, 55.72285, 37.57449, 55.7536], "features": [{"bbox": [37.48929, 55.72285, 37.57449, 55.7536], "geometry": {"coordinates": [[[37.48929, 55.73301], [37.50579, 55.73683], [37.51487, 55.74445], [37.52252, 55.74721], [37.52797, 55.74461], [37.53673, 55.74464], [37.56402, 55.7536], [37.5708, 55.75273], [37.57449, 55.74886], [37.57389, 55.74471], [37.56575, 55.7364], [37.54779, 55.72807], [37.53847, 55.73621], [37.51795, 55.73116], [37.49857, 55.72285], [37.48929, 55.73301]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_a72f8013431f4a09b009ce388ce064a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_77474fd7a26b48bcbfe292a42f2ce1f6 = $(`<div id="html_77474fd7a26b48bcbfe292a42f2ce1f6" style="width: 100.0%; height: 100.0%;">Дорогомилово</div>`)[0];
+            popup_a72f8013431f4a09b009ce388ce064a9.setContent(html_77474fd7a26b48bcbfe292a42f2ce1f6);
+        
+
+        geo_json_d65fdef555794746a277749f92360050.bindPopup(popup_a72f8013431f4a09b009ce388ce064a9)
+        ;
+
+        
+    
+    
+        function geo_json_a2a6509f010d4369964e278299f04f75_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_a2a6509f010d4369964e278299f04f75_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_a2a6509f010d4369964e278299f04f75 = L.geoJson(null, {
+                onEachFeature: geo_json_a2a6509f010d4369964e278299f04f75_onEachFeature,
+            
+                style: geo_json_a2a6509f010d4369964e278299f04f75_styler,
+        });
+
+        function geo_json_a2a6509f010d4369964e278299f04f75_add (data) {
+            geo_json_a2a6509f010d4369964e278299f04f75
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_a2a6509f010d4369964e278299f04f75_add({"bbox": [37.49851, 55.62363, 37.564, 55.65731], "features": [{"bbox": [37.49851, 55.62363, 37.564, 55.65731], "geometry": {"coordinates": [[[37.49851, 55.64219], [37.50889, 55.64994], [37.51325, 55.64809], [37.52189, 55.65464], [37.52003, 55.65516], [37.52118, 55.65605], [37.52276, 55.65529], [37.52537, 55.65731], [37.53841, 55.65588], [37.55124, 55.65132], [37.564, 55.64946], [37.55972, 55.64449], [37.54533, 55.63875], [37.54038, 55.63149], [37.54056, 55.62864], [37.52443, 55.62363], [37.51265, 55.62578], [37.52049, 55.6343], [37.49851, 55.64219]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_59e9ad8f4e0b4f57a3cb1272854d1772 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50036950215e4328847e08bdfee0a52a = $(`<div id="html_50036950215e4328847e08bdfee0a52a" style="width: 100.0%; height: 100.0%;">Коньково</div>`)[0];
+            popup_59e9ad8f4e0b4f57a3cb1272854d1772.setContent(html_50036950215e4328847e08bdfee0a52a);
+        
+
+        geo_json_a2a6509f010d4369964e278299f04f75.bindPopup(popup_59e9ad8f4e0b4f57a3cb1272854d1772)
+        ;
+
+        
+    
+    
+        function geo_json_678ced23ce9240f29e4ed4e63ea08763_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_678ced23ce9240f29e4ed4e63ea08763_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_678ced23ce9240f29e4ed4e63ea08763 = L.geoJson(null, {
+                onEachFeature: geo_json_678ced23ce9240f29e4ed4e63ea08763_onEachFeature,
+            
+                style: geo_json_678ced23ce9240f29e4ed4e63ea08763_styler,
+        });
+
+        function geo_json_678ced23ce9240f29e4ed4e63ea08763_add (data) {
+            geo_json_678ced23ce9240f29e4ed4e63ea08763
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_678ced23ce9240f29e4ed4e63ea08763_add({"bbox": [37.50389, 55.75985, 37.55503, 55.80374], "features": [{"bbox": [37.50389, 55.75985, 37.55503, 55.80374], "geometry": {"coordinates": [[[37.50389, 55.79112], [37.51835, 55.79349], [37.52044, 55.80374], [37.53119, 55.80071], [37.55117, 55.79191], [37.54084, 55.78496], [37.55075, 55.77749], [37.55503, 55.77612], [37.55192, 55.77341], [37.53896, 55.77113], [37.53606, 55.7661], [37.52429, 55.75985], [37.50744, 55.77682], [37.50389, 55.79112]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_d3ca76276bcb4332bbaac9f0402ea219 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a428a1a6cd14663837233a152e57aae = $(`<div id="html_3a428a1a6cd14663837233a152e57aae" style="width: 100.0%; height: 100.0%;">Хорошёвский</div>`)[0];
+            popup_d3ca76276bcb4332bbaac9f0402ea219.setContent(html_3a428a1a6cd14663837233a152e57aae);
+        
+
+        geo_json_678ced23ce9240f29e4ed4e63ea08763.bindPopup(popup_d3ca76276bcb4332bbaac9f0402ea219)
+        ;
+
+        
+    
+    
+        function geo_json_68136935409f466cb306b5b50aaaaafd_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_68136935409f466cb306b5b50aaaaafd_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_68136935409f466cb306b5b50aaaaafd = L.geoJson(null, {
+                onEachFeature: geo_json_68136935409f466cb306b5b50aaaaafd_onEachFeature,
+            
+                style: geo_json_68136935409f466cb306b5b50aaaaafd_styler,
+        });
+
+        function geo_json_68136935409f466cb306b5b50aaaaafd_add (data) {
+            geo_json_68136935409f466cb306b5b50aaaaafd
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_68136935409f466cb306b5b50aaaaafd_add({"bbox": [37.54084, 55.77341, 37.58858, 55.79338], "features": [{"bbox": [37.54084, 55.77341, 37.58858, 55.79338], "geometry": {"coordinates": [[[37.54084, 55.78496], [37.55117, 55.79191], [37.56574, 55.78548], [37.57454, 55.79166], [37.58647, 55.79338], [37.58858, 55.792], [37.58479, 55.77987], [37.57599, 55.77561], [37.55192, 55.77341], [37.55503, 55.77612], [37.55075, 55.77749], [37.54084, 55.78496]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_6681b242889b4b7bbab2477d7270ac5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ca49dcb485cf4b1fbd67c7230fac05e4 = $(`<div id="html_ca49dcb485cf4b1fbd67c7230fac05e4" style="width: 100.0%; height: 100.0%;">Беговой</div>`)[0];
+            popup_6681b242889b4b7bbab2477d7270ac5b.setContent(html_ca49dcb485cf4b1fbd67c7230fac05e4);
+        
+
+        geo_json_68136935409f466cb306b5b50aaaaafd.bindPopup(popup_6681b242889b4b7bbab2477d7270ac5b)
+        ;
+
+        
+    
+    
+        function geo_json_023d5867e9484034ab01d4c874d65e83_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_023d5867e9484034ab01d4c874d65e83_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_023d5867e9484034ab01d4c874d65e83 = L.geoJson(null, {
+                onEachFeature: geo_json_023d5867e9484034ab01d4c874d65e83_onEachFeature,
+            
+                style: geo_json_023d5867e9484034ab01d4c874d65e83_styler,
+        });
+
+        function geo_json_023d5867e9484034ab01d4c874d65e83_add (data) {
+            geo_json_023d5867e9484034ab01d4c874d65e83
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_023d5867e9484034ab01d4c874d65e83_add({"bbox": [37.51101, 55.78548, 37.57454, 55.81517], "features": [{"bbox": [37.51101, 55.78548, 37.57454, 55.81517], "geometry": {"coordinates": [[[37.51101, 55.80608], [37.5195, 55.81517], [37.53397, 55.81514], [37.54946, 55.80708], [37.54846, 55.80664], [37.56381, 55.79361], [37.56959, 55.79143], [37.57454, 55.79166], [37.56574, 55.78548], [37.53119, 55.80071], [37.51101, 55.80608]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_09b2f9ea52c143708bde580e82e4c1e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_012d8f9ce42846c394a1900a2dcab431 = $(`<div id="html_012d8f9ce42846c394a1900a2dcab431" style="width: 100.0%; height: 100.0%;">Аэропорт</div>`)[0];
+            popup_09b2f9ea52c143708bde580e82e4c1e3.setContent(html_012d8f9ce42846c394a1900a2dcab431);
+        
+
+        geo_json_023d5867e9484034ab01d4c874d65e83.bindPopup(popup_09b2f9ea52c143708bde580e82e4c1e3)
+        ;
+
+        
+    
+    
+        function geo_json_03dea36772bc449aa369740f3cafa98f_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_03dea36772bc449aa369740f3cafa98f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_03dea36772bc449aa369740f3cafa98f = L.geoJson(null, {
+                onEachFeature: geo_json_03dea36772bc449aa369740f3cafa98f_onEachFeature,
+            
+                style: geo_json_03dea36772bc449aa369740f3cafa98f_styler,
+        });
+
+        function geo_json_03dea36772bc449aa369740f3cafa98f_add (data) {
+            geo_json_03dea36772bc449aa369740f3cafa98f
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_03dea36772bc449aa369740f3cafa98f_add({"bbox": [37.51393, 55.7444, 37.60967, 55.77552], "features": [{"bbox": [37.51393, 55.7444, 37.60967, 55.77552], "geometry": {"coordinates": [[[37.51393, 55.75842], [37.52256, 55.76169], [37.52429, 55.75985], [37.53212, 55.76337], [37.53606, 55.7661], [37.53792, 55.77037], [37.54186, 55.77241], [37.57523, 55.77552], [37.57711, 55.77316], [37.58334, 55.7753], [37.59659, 55.7676], [37.59522, 55.76686], [37.59899, 55.76429], [37.60424, 55.7632], [37.60967, 55.75827], [37.60602, 55.75403], [37.60237, 55.75359], [37.58446, 55.75811], [37.58386, 55.7552], [37.57681, 55.75521], [37.57206, 55.75202], [37.56018, 55.75308], [37.54037, 55.74546], [37.5324, 55.7444], [37.52364, 55.74633], [37.51393, 55.75842]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_142a8b5c20d3429d8b9270105047896a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3f7400057e448e0af4df8fd47bdac81 = $(`<div id="html_b3f7400057e448e0af4df8fd47bdac81" style="width: 100.0%; height: 100.0%;">Пресненский</div>`)[0];
+            popup_142a8b5c20d3429d8b9270105047896a.setContent(html_b3f7400057e448e0af4df8fd47bdac81);
+        
+
+        geo_json_03dea36772bc449aa369740f3cafa98f.bindPopup(popup_142a8b5c20d3429d8b9270105047896a)
+        ;
+
+        
+    
+    
+        function geo_json_7703242f43c94c36b458dea32e1489be_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_7703242f43c94c36b458dea32e1489be_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_7703242f43c94c36b458dea32e1489be = L.geoJson(null, {
+                onEachFeature: geo_json_7703242f43c94c36b458dea32e1489be_onEachFeature,
+            
+                style: geo_json_7703242f43c94c36b458dea32e1489be_styler,
+        });
+
+        function geo_json_7703242f43c94c36b458dea32e1489be_add (data) {
+            geo_json_7703242f43c94c36b458dea32e1489be
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_7703242f43c94c36b458dea32e1489be_add({"bbox": [37.53005, 55.68083, 37.58871, 55.71421], "features": [{"bbox": [37.53005, 55.68083, 37.58871, 55.71421], "geometry": {"coordinates": [[[37.53005, 55.68993], [37.55923, 55.71028], [37.57761, 55.71421], [37.58871, 55.70714], [37.56146, 55.69156], [37.54749, 55.68083], [37.53005, 55.68993]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_9090c1eb56a7413981e986d31492cb12 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_445715f9b0324c029ef3f7455de16d6d = $(`<div id="html_445715f9b0324c029ef3f7455de16d6d" style="width: 100.0%; height: 100.0%;">Гагаринский</div>`)[0];
+            popup_9090c1eb56a7413981e986d31492cb12.setContent(html_445715f9b0324c029ef3f7455de16d6d);
+        
+
+        geo_json_7703242f43c94c36b458dea32e1489be.bindPopup(popup_9090c1eb56a7413981e986d31492cb12)
+        ;
+
+        
+    
+    
+        function geo_json_39a72c4db96548a5b8ce5743b1ab255a_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_39a72c4db96548a5b8ce5743b1ab255a_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_39a72c4db96548a5b8ce5743b1ab255a = L.geoJson(null, {
+                onEachFeature: geo_json_39a72c4db96548a5b8ce5743b1ab255a_onEachFeature,
+            
+                style: geo_json_39a72c4db96548a5b8ce5743b1ab255a_styler,
+        });
+
+        function geo_json_39a72c4db96548a5b8ce5743b1ab255a_add (data) {
+            geo_json_39a72c4db96548a5b8ce5743b1ab255a
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_39a72c4db96548a5b8ce5743b1ab255a_add({"bbox": [37.55226, 55.67269, 37.60162, 55.70634], "features": [{"bbox": [37.55226, 55.67269, 37.60162, 55.70634], "geometry": {"coordinates": [[[37.55226, 55.68403], [37.56146, 55.69156], [37.58731, 55.70634], [37.60162, 55.69158], [37.59768, 55.68985], [37.58614, 55.67915], [37.57951, 55.67691], [37.58031, 55.67486], [37.57809, 55.67269], [37.56299, 55.67789], [37.55226, 55.68403]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_f08c3bed67a745cdb49bc242e136fed4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_384c3699af704c34b3a615212c371d3a = $(`<div id="html_384c3699af704c34b3a615212c371d3a" style="width: 100.0%; height: 100.0%;">Академический</div>`)[0];
+            popup_f08c3bed67a745cdb49bc242e136fed4.setContent(html_384c3699af704c34b3a615212c371d3a);
+        
+
+        geo_json_39a72c4db96548a5b8ce5743b1ab255a.bindPopup(popup_f08c3bed67a745cdb49bc242e136fed4)
+        ;
+
+        
+    
+    
+        function geo_json_681be4e2509a4af4a191c9b3a05b365e_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_681be4e2509a4af4a191c9b3a05b365e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_681be4e2509a4af4a191c9b3a05b365e = L.geoJson(null, {
+                onEachFeature: geo_json_681be4e2509a4af4a191c9b3a05b365e_onEachFeature,
+            
+                style: geo_json_681be4e2509a4af4a191c9b3a05b365e_styler,
+        });
+
+        function geo_json_681be4e2509a4af4a191c9b3a05b365e_add (data) {
+            geo_json_681be4e2509a4af4a191c9b3a05b365e
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_681be4e2509a4af4a191c9b3a05b365e_add({"bbox": [37.5698, 55.60335, 37.64076, 55.6254], "features": [{"bbox": [37.5698, 55.60335, 37.64076, 55.6254], "geometry": {"coordinates": [[[37.5698, 55.60807], [37.57469, 55.60882], [37.57568, 55.61179], [37.57463, 55.61323], [37.57809, 55.61476], [37.57593, 55.61551], [37.5805, 55.61939], [37.57506, 55.62054], [37.58054, 55.62179], [37.58381, 55.6254], [37.58823, 55.62351], [37.61418, 55.62067], [37.61488, 55.62224], [37.63082, 55.62184], [37.63495, 55.61495], [37.64076, 55.61051], [37.63324, 55.60427], [37.60927, 55.61013], [37.60594, 55.60335], [37.58837, 55.60607], [37.57782, 55.60437], [37.5749, 55.6066], [37.57187, 55.60599], [37.5698, 55.60807]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_987269d8b987491b93e4e4695ed50ae8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_87e118c273ad422691e7afef88c5a62b = $(`<div id="html_87e118c273ad422691e7afef88c5a62b" style="width: 100.0%; height: 100.0%;">Чертаново Центральное</div>`)[0];
+            popup_987269d8b987491b93e4e4695ed50ae8.setContent(html_87e118c273ad422691e7afef88c5a62b);
+        
+
+        geo_json_681be4e2509a4af4a191c9b3a05b365e.bindPopup(popup_987269d8b987491b93e4e4695ed50ae8)
+        ;
+
+        
+    
+    
+        function geo_json_30370ae9d45740c8a3615da768ceb022_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_30370ae9d45740c8a3615da768ceb022_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_30370ae9d45740c8a3615da768ceb022 = L.geoJson(null, {
+                onEachFeature: geo_json_30370ae9d45740c8a3615da768ceb022_onEachFeature,
+            
+                style: geo_json_30370ae9d45740c8a3615da768ceb022_styler,
+        });
+
+        function geo_json_30370ae9d45740c8a3615da768ceb022_add (data) {
+            geo_json_30370ae9d45740c8a3615da768ceb022
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_30370ae9d45740c8a3615da768ceb022_add({"bbox": [37.57294, 55.56637, 37.63324, 55.61013], "features": [{"bbox": [37.57294, 55.56637, 37.63324, 55.61013], "geometry": {"coordinates": [[[37.57294, 55.58097], [37.57748, 55.58635], [37.57714, 55.5917], [37.57897, 55.59591], [37.58024, 55.59581], [37.58057, 55.59776], [37.57666, 55.59787], [37.57671, 55.59929], [37.57934, 55.59969], [37.57824, 55.59982], [37.57909, 55.60082], [37.57767, 55.60017], [37.58171, 55.60457], [37.58837, 55.60607], [37.60594, 55.60335], [37.60927, 55.61013], [37.63324, 55.60427], [37.62816, 55.59925], [37.61574, 55.59132], [37.61313, 55.57463], [37.60032, 55.57537], [37.5978, 55.57388], [37.60229, 55.56637], [37.59747, 55.56687], [37.5972, 55.56908], [37.59009, 55.5769], [37.57294, 55.58097]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_82ba1b83bad145198086e1ce6ae7104d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1eaf466ec1934763968753d455540ec2 = $(`<div id="html_1eaf466ec1934763968753d455540ec2" style="width: 100.0%; height: 100.0%;">Чертаново Южное</div>`)[0];
+            popup_82ba1b83bad145198086e1ce6ae7104d.setContent(html_1eaf466ec1934763968753d455540ec2);
+        
+
+        geo_json_30370ae9d45740c8a3615da768ceb022.bindPopup(popup_82ba1b83bad145198086e1ce6ae7104d)
+        ;
+
+        
+    
+    
+        function geo_json_9a4f8167671b4234831319c14671edc2_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_9a4f8167671b4234831319c14671edc2_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_9a4f8167671b4234831319c14671edc2 = L.geoJson(null, {
+                onEachFeature: geo_json_9a4f8167671b4234831319c14671edc2_onEachFeature,
+            
+                style: geo_json_9a4f8167671b4234831319c14671edc2_styler,
+        });
+
+        function geo_json_9a4f8167671b4234831319c14671edc2_add (data) {
+            geo_json_9a4f8167671b4234831319c14671edc2
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_9a4f8167671b4234831319c14671edc2_add({"bbox": [37.57727, 55.62067, 37.63082, 55.64533], "features": [{"bbox": [37.57727, 55.62067, 37.63082, 55.64533], "geometry": {"coordinates": [[[37.57727, 55.63268], [37.58221, 55.63854], [37.582, 55.64122], [37.57929, 55.6428], [37.58039, 55.64533], [37.59451, 55.64196], [37.61977, 55.64054], [37.61974, 55.64219], [37.62447, 55.64253], [37.63082, 55.62184], [37.61488, 55.62224], [37.61418, 55.62067], [37.58601, 55.62386], [37.58584, 55.62509], [37.58278, 55.62517], [37.5858, 55.63142], [37.57727, 55.63268]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_9f38ba633a134f099740e5574640ab44 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0387c6e22a9b4ddfb83a86e51df4ddef = $(`<div id="html_0387c6e22a9b4ddfb83a86e51df4ddef" style="width: 100.0%; height: 100.0%;">Чертаново Северное</div>`)[0];
+            popup_9f38ba633a134f099740e5574640ab44.setContent(html_0387c6e22a9b4ddfb83a86e51df4ddef);
+        
+
+        geo_json_9a4f8167671b4234831319c14671edc2.bindPopup(popup_9f38ba633a134f099740e5574640ab44)
+        ;
+
+        
+    
+    
+        function geo_json_cf9dbe40448d4537b8b24397d6605c52_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_cf9dbe40448d4537b8b24397d6605c52_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_cf9dbe40448d4537b8b24397d6605c52 = L.geoJson(null, {
+                onEachFeature: geo_json_cf9dbe40448d4537b8b24397d6605c52_onEachFeature,
+            
+                style: geo_json_cf9dbe40448d4537b8b24397d6605c52_styler,
+        });
+
+        function geo_json_cf9dbe40448d4537b8b24397d6605c52_add (data) {
+            geo_json_cf9dbe40448d4537b8b24397d6605c52
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_cf9dbe40448d4537b8b24397d6605c52_add({"bbox": [37.57761, 55.711, 37.62635, 55.74908], "features": [{"bbox": [37.57761, 55.711, 37.62635, 55.74908], "geometry": {"coordinates": [[[37.57761, 55.71421], [37.5903, 55.72356], [37.60003, 55.73459], [37.60674, 55.73809], [37.60832, 55.74312], [37.61174, 55.7465], [37.62506, 55.74908], [37.62635, 55.746], [37.62455, 55.74543], [37.62395, 55.73009], [37.61961, 55.72924], [37.61991, 55.7273], [37.61513, 55.72688], [37.61777, 55.72028], [37.61017, 55.72143], [37.6094, 55.71948], [37.60038, 55.72135], [37.59408, 55.71833], [37.59271, 55.71969], [37.59079, 55.71781], [37.59267, 55.71687], [37.58557, 55.71107], [37.58213, 55.711], [37.57761, 55.71421]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_06514d35216d4304848359c3e62b7847 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b489ffc43f2d449c9661512cf6a91e61 = $(`<div id="html_b489ffc43f2d449c9661512cf6a91e61" style="width: 100.0%; height: 100.0%;">Якиманка</div>`)[0];
+            popup_06514d35216d4304848359c3e62b7847.setContent(html_b489ffc43f2d449c9661512cf6a91e61);
+        
+
+        geo_json_cf9dbe40448d4537b8b24397d6605c52.bindPopup(popup_06514d35216d4304848359c3e62b7847)
+        ;
+
+        
+    
+    
+        function geo_json_25c3a389197747b2b8f08dd74a3059b1_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_25c3a389197747b2b8f08dd74a3059b1_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_25c3a389197747b2b8f08dd74a3059b1 = L.geoJson(null, {
+                onEachFeature: geo_json_25c3a389197747b2b8f08dd74a3059b1_onEachFeature,
+            
+                style: geo_json_25c3a389197747b2b8f08dd74a3059b1_styler,
+        });
+
+        function geo_json_25c3a389197747b2b8f08dd74a3059b1_add (data) {
+            geo_json_25c3a389197747b2b8f08dd74a3059b1
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_25c3a389197747b2b8f08dd74a3059b1_add({"bbox": [37.58042, 55.79695, 37.64972, 55.85926], "features": [{"bbox": [37.58042, 55.79695, 37.64972, 55.85926], "geometry": {"coordinates": [[[37.58042, 55.83384], [37.58052, 55.83891], [37.5859, 55.84017], [37.58949, 55.83899], [37.58633, 55.84354], [37.59282, 55.84731], [37.61232, 55.84648], [37.62009, 55.8544], [37.62036, 55.85926], [37.62521, 55.85779], [37.62672, 55.84602], [37.63587, 55.84568], [37.63674, 55.83781], [37.63236, 55.83862], [37.63202, 55.83595], [37.63423, 55.83532], [37.63431, 55.83381], [37.64972, 55.82898], [37.6393, 55.81859], [37.63494, 55.79695], [37.60369, 55.81718], [37.60047, 55.83074], [37.59093, 55.8361], [37.59156, 55.83363], [37.58042, 55.83384]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_5db2ebbf6921424d970d0d0771343f56 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3afab4cfe98f438ea82633497e5b6a34 = $(`<div id="html_3afab4cfe98f438ea82633497e5b6a34" style="width: 100.0%; height: 100.0%;">Останкинский</div>`)[0];
+            popup_5db2ebbf6921424d970d0d0771343f56.setContent(html_3afab4cfe98f438ea82633497e5b6a34);
+        
+
+        geo_json_25c3a389197747b2b8f08dd74a3059b1.bindPopup(popup_5db2ebbf6921424d970d0d0771343f56)
+        ;
+
+        
+    
+    
+        function geo_json_9174f757c98c46978451cee37eea997c_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_9174f757c98c46978451cee37eea997c_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_9174f757c98c46978451cee37eea997c = L.geoJson(null, {
+                onEachFeature: geo_json_9174f757c98c46978451cee37eea997c_onEachFeature,
+            
+                style: geo_json_9174f757c98c46978451cee37eea997c_styler,
+        });
+
+        function geo_json_9174f757c98c46978451cee37eea997c_add (data) {
+            geo_json_9174f757c98c46978451cee37eea997c
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_9174f757c98c46978451cee37eea997c_add({"bbox": [37.58213, 55.6891, 37.62887, 55.72143], "features": [{"bbox": [37.58213, 55.6891, 37.62887, 55.72143], "geometry": {"coordinates": [[[37.58213, 55.711], [37.58557, 55.71107], [37.58834, 55.7131], [37.59267, 55.71687], [37.59079, 55.71781], [37.59271, 55.71969], [37.59408, 55.71833], [37.60038, 55.72135], [37.6094, 55.71948], [37.61017, 55.72143], [37.61441, 55.721], [37.61557, 55.72009], [37.61371, 55.7198], [37.61366, 55.71663], [37.60834, 55.71675], [37.60646, 55.70953], [37.61122, 55.70433], [37.62099, 55.70605], [37.62857, 55.70526], [37.62887, 55.69175], [37.61259, 55.6891], [37.60374, 55.69052], [37.59625, 55.69607], [37.58731, 55.70634], [37.58871, 55.70714], [37.58213, 55.711]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_f80f2bf8938f414db23c28c865d6edc2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a279104fed1440b949275bc1308225a = $(`<div id="html_7a279104fed1440b949275bc1308225a" style="width: 100.0%; height: 100.0%;">Донской</div>`)[0];
+            popup_f80f2bf8938f414db23c28c865d6edc2.setContent(html_7a279104fed1440b949275bc1308225a);
+        
+
+        geo_json_9174f757c98c46978451cee37eea997c.bindPopup(popup_f80f2bf8938f414db23c28c865d6edc2)
+        ;
+
+        
+    
+    
+        function geo_json_107987787dc8414ca7781930eaa23cb9_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_107987787dc8414ca7781930eaa23cb9_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_107987787dc8414ca7781930eaa23cb9 = L.geoJson(null, {
+                onEachFeature: geo_json_107987787dc8414ca7781930eaa23cb9_onEachFeature,
+            
+                style: geo_json_107987787dc8414ca7781930eaa23cb9_styler,
+        });
+
+        function geo_json_107987787dc8414ca7781930eaa23cb9_add (data) {
+            geo_json_107987787dc8414ca7781930eaa23cb9
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_107987787dc8414ca7781930eaa23cb9_add({"bbox": [37.60351, 55.64054, 37.62716, 55.69073], "features": [{"bbox": [37.60351, 55.64054, 37.62716, 55.69073], "geometry": {"coordinates": [[[37.60351, 55.69035], [37.61259, 55.6891], [37.62186, 55.69073], [37.62716, 55.67261], [37.62291, 55.66689], [37.6222, 55.65183], [37.62447, 55.64253], [37.61974, 55.64219], [37.61977, 55.64054], [37.60573, 55.64133], [37.60547, 55.65653], [37.61357, 55.66348], [37.60765, 55.66408], [37.61164, 55.66613], [37.60628, 55.66886], [37.60584, 55.67285], [37.619, 55.68432], [37.60675, 55.68436], [37.60351, 55.69035]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_58ff0e2ea09f43e0a8fe2885e79ff15d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51e3b74407c24b0f9f17744d0aea56e7 = $(`<div id="html_51e3b74407c24b0f9f17744d0aea56e7" style="width: 100.0%; height: 100.0%;">Нагорный</div>`)[0];
+            popup_58ff0e2ea09f43e0a8fe2885e79ff15d.setContent(html_51e3b74407c24b0f9f17744d0aea56e7);
+        
+
+        geo_json_107987787dc8414ca7781930eaa23cb9.bindPopup(popup_58ff0e2ea09f43e0a8fe2885e79ff15d)
+        ;
+
+        
+    
+    
+        function geo_json_bcf190ed29ab4ea68a624a238897a0e2_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_bcf190ed29ab4ea68a624a238897a0e2_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_bcf190ed29ab4ea68a624a238897a0e2 = L.geoJson(null, {
+                onEachFeature: geo_json_bcf190ed29ab4ea68a624a238897a0e2_onEachFeature,
+            
+                style: geo_json_bcf190ed29ab4ea68a624a238897a0e2_styler,
+        });
+
+        function geo_json_bcf190ed29ab4ea68a624a238897a0e2_add (data) {
+            geo_json_bcf190ed29ab4ea68a624a238897a0e2
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_bcf190ed29ab4ea68a624a238897a0e2_add({"bbox": [37.62504, 55.8408, 37.67194, 55.86532], "features": [{"bbox": [37.62504, 55.8408, 37.67194, 55.86532], "geometry": {"coordinates": [[[37.62504, 55.85709], [37.6329, 55.85736], [37.63385, 55.86061], [37.64173, 55.86532], [37.65294, 55.8576], [37.66189, 55.85695], [37.67194, 55.85043], [37.67145, 55.84681], [37.66347, 55.8408], [37.64826, 55.84495], [37.62672, 55.84602], [37.62504, 55.85709]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_873386130fbf4ce89e649aa6d3f29594 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6947b2b51cb7443bbeb62adc1d99914d = $(`<div id="html_6947b2b51cb7443bbeb62adc1d99914d" style="width: 100.0%; height: 100.0%;">Свиблово</div>`)[0];
+            popup_873386130fbf4ce89e649aa6d3f29594.setContent(html_6947b2b51cb7443bbeb62adc1d99914d);
+        
+
+        geo_json_bcf190ed29ab4ea68a624a238897a0e2.bindPopup(popup_873386130fbf4ce89e649aa6d3f29594)
+        ;
+
+        
+    
+    
+        function geo_json_f5caeed13b7b4e42b68f8b4b1ae275df_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_f5caeed13b7b4e42b68f8b4b1ae275df_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_f5caeed13b7b4e42b68f8b4b1ae275df = L.geoJson(null, {
+                onEachFeature: geo_json_f5caeed13b7b4e42b68f8b4b1ae275df_onEachFeature,
+            
+                style: geo_json_f5caeed13b7b4e42b68f8b4b1ae275df_styler,
+        });
+
+        function geo_json_f5caeed13b7b4e42b68f8b4b1ae275df_add (data) {
+            geo_json_f5caeed13b7b4e42b68f8b4b1ae275df
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_f5caeed13b7b4e42b68f8b4b1ae275df_add({"bbox": [37.61225, 55.75912, 37.6449, 55.79714], "features": [{"bbox": [37.61225, 55.75912, 37.6449, 55.79714], "geometry": {"coordinates": [[[37.61225, 55.78259], [37.61515, 55.78316], [37.61672, 55.78615], [37.61631, 55.79314], [37.63462, 55.79186], [37.63499, 55.79714], [37.64296, 55.79298], [37.64026, 55.79244], [37.6449, 55.77975], [37.64131, 55.77967], [37.63725, 55.772], [37.63239, 55.77262], [37.63129, 55.76627], [37.62868, 55.76311], [37.63061, 55.76341], [37.63009, 55.76077], [37.62155, 55.75912], [37.61986, 55.7652], [37.62153, 55.76697], [37.621, 55.77341], [37.61894, 55.77361], [37.61705, 55.7803], [37.61225, 55.78259]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_ef15aa4491144c0d837116897f2872a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c52de5f76e3483d828b50eeec2ded19 = $(`<div id="html_1c52de5f76e3483d828b50eeec2ded19" style="width: 100.0%; height: 100.0%;">Мещанский</div>`)[0];
+            popup_ef15aa4491144c0d837116897f2872a0.setContent(html_1c52de5f76e3483d828b50eeec2ded19);
+        
+
+        geo_json_f5caeed13b7b4e42b68f8b4b1ae275df.bindPopup(popup_ef15aa4491144c0d837116897f2872a0)
+        ;
+
+        
+    
+    
+        function geo_json_74bb43c3a6a041769860caf643fec275_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_74bb43c3a6a041769860caf643fec275_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_74bb43c3a6a041769860caf643fec275 = L.geoJson(null, {
+                onEachFeature: geo_json_74bb43c3a6a041769860caf643fec275_onEachFeature,
+            
+                style: geo_json_74bb43c3a6a041769860caf643fec275_styler,
+        });
+
+        function geo_json_74bb43c3a6a041769860caf643fec275_add (data) {
+            geo_json_74bb43c3a6a041769860caf643fec275
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_74bb43c3a6a041769860caf643fec275_add({"bbox": [37.62186, 55.65076, 37.66524, 55.69175], "features": [{"bbox": [37.62186, 55.65076, 37.66524, 55.69175], "geometry": {"coordinates": [[[37.62186, 55.69073], [37.62887, 55.69175], [37.63157, 55.68667], [37.63612, 55.68461], [37.66524, 55.68613], [37.66187, 55.66935], [37.65431, 55.6597], [37.65343, 55.65601], [37.65459, 55.65342], [37.65907, 55.65076], [37.6418, 55.65833], [37.63706, 55.65495], [37.63426, 55.65653], [37.62258, 55.65756], [37.62291, 55.66689], [37.62716, 55.67261], [37.62186, 55.69073]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_2e7d9a62f6004e7dab534e34549ba02b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_480100ec84614664912ba9866d900ea9 = $(`<div id="html_480100ec84614664912ba9866d900ea9" style="width: 100.0%; height: 100.0%;">Нагатино-Садовники</div>`)[0];
+            popup_2e7d9a62f6004e7dab534e34549ba02b.setContent(html_480100ec84614664912ba9866d900ea9);
+        
+
+        geo_json_74bb43c3a6a041769860caf643fec275.bindPopup(popup_2e7d9a62f6004e7dab534e34549ba02b)
+        ;
+
+        
+    
+    
+        function geo_json_6981d64e3a28400e9dc6a4c4118ae2e7_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_6981d64e3a28400e9dc6a4c4118ae2e7_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_6981d64e3a28400e9dc6a4c4118ae2e7 = L.geoJson(null, {
+                onEachFeature: geo_json_6981d64e3a28400e9dc6a4c4118ae2e7_onEachFeature,
+            
+                style: geo_json_6981d64e3a28400e9dc6a4c4118ae2e7_styler,
+        });
+
+        function geo_json_6981d64e3a28400e9dc6a4c4118ae2e7_add (data) {
+            geo_json_6981d64e3a28400e9dc6a4c4118ae2e7
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_6981d64e3a28400e9dc6a4c4118ae2e7_add({"bbox": [37.6222, 55.62801, 37.7295, 55.65833], "features": [{"bbox": [37.6222, 55.62801, 37.7295, 55.65833], "geometry": {"coordinates": [[[37.6222, 55.65183], [37.62258, 55.65756], [37.63426, 55.65653], [37.63706, 55.65495], [37.6418, 55.65833], [37.66059, 55.65017], [37.6716, 55.65636], [37.67165, 55.65435], [37.67457, 55.65176], [37.69448, 55.64328], [37.71328, 55.63946], [37.7295, 55.64089], [37.72713, 55.63526], [37.72948, 55.63153], [37.7145, 55.63145], [37.68975, 55.62801], [37.69094, 55.63386], [37.68774, 55.63669], [37.64359, 55.63836], [37.64139, 55.63867], [37.64179, 55.64067], [37.62509, 55.64001], [37.6222, 55.65183]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_d30e0524cbab4cca9c99775b0d3c1719 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1eb678d272684486945bb4c1d5be008d = $(`<div id="html_1eb678d272684486945bb4c1d5be008d" style="width: 100.0%; height: 100.0%;">Москворечье-Сабурово</div>`)[0];
+            popup_d30e0524cbab4cca9c99775b0d3c1719.setContent(html_1eb678d272684486945bb4c1d5be008d);
+        
+
+        geo_json_6981d64e3a28400e9dc6a4c4118ae2e7.bindPopup(popup_d30e0524cbab4cca9c99775b0d3c1719)
+        ;
+
+        
+    
+    
+        function geo_json_7aa37053b5f743268133d763bb3a2a3a_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_7aa37053b5f743268133d763bb3a2a3a_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_7aa37053b5f743268133d763bb3a2a3a = L.geoJson(null, {
+                onEachFeature: geo_json_7aa37053b5f743268133d763bb3a2a3a_onEachFeature,
+            
+                style: geo_json_7aa37053b5f743268133d763bb3a2a3a_styler,
+        });
+
+        function geo_json_7aa37053b5f743268133d763bb3a2a3a_add (data) {
+            geo_json_7aa37053b5f743268133d763bb3a2a3a
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_7aa37053b5f743268133d763bb3a2a3a_add({"bbox": [37.63202, 55.82442, 37.67146, 55.84568], "features": [{"bbox": [37.63202, 55.82442, 37.67146, 55.84568], "geometry": {"coordinates": [[[37.63202, 55.83595], [37.63236, 55.83862], [37.63674, 55.83781], [37.63587, 55.84568], [37.65056, 55.84462], [37.67021, 55.83874], [37.67146, 55.82723], [37.67046, 55.82442], [37.66755, 55.82496], [37.6544, 55.82864], [37.6543, 55.83328], [37.64972, 55.82898], [37.63431, 55.83381], [37.63423, 55.83532], [37.63202, 55.83595]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_cd8ffc69583a4542b358d0a2d5e587a6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7ef5d2ec638424596d354df5cb555eb = $(`<div id="html_b7ef5d2ec638424596d354df5cb555eb" style="width: 100.0%; height: 100.0%;">Ростокино</div>`)[0];
+            popup_cd8ffc69583a4542b358d0a2d5e587a6.setContent(html_b7ef5d2ec638424596d354df5cb555eb);
+        
+
+        geo_json_7aa37053b5f743268133d763bb3a2a3a.bindPopup(popup_cd8ffc69583a4542b358d0a2d5e587a6)
+        ;
+
+        
+    
+    
+        function geo_json_ec6bd3b391b843419ff473b94a74b7da_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_ec6bd3b391b843419ff473b94a74b7da_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_ec6bd3b391b843419ff473b94a74b7da = L.geoJson(null, {
+                onEachFeature: geo_json_ec6bd3b391b843419ff473b94a74b7da_onEachFeature,
+            
+                style: geo_json_ec6bd3b391b843419ff473b94a74b7da_styler,
+        });
+
+        function geo_json_ec6bd3b391b843419ff473b94a74b7da_add (data) {
+            geo_json_ec6bd3b391b843419ff473b94a74b7da
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_ec6bd3b391b843419ff473b94a74b7da_add({"bbox": [37.63499, 55.78937, 37.67046, 55.83328], "features": [{"bbox": [37.63499, 55.78937, 37.67046, 55.83328], "geometry": {"coordinates": [[[37.63499, 55.79714], [37.6393, 55.81859], [37.6543, 55.83328], [37.6544, 55.82864], [37.67046, 55.82442], [37.6514, 55.80011], [37.65031, 55.79292], [37.65152, 55.78937], [37.63499, 55.79714]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_2b2b73605c5349a1af4f767e91d39a8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_878c445ebf5743328934f159a41f1e03 = $(`<div id="html_878c445ebf5743328934f159a41f1e03" style="width: 100.0%; height: 100.0%;">Алексеевский</div>`)[0];
+            popup_2b2b73605c5349a1af4f767e91d39a8b.setContent(html_878c445ebf5743328934f159a41f1e03);
+        
+
+        geo_json_ec6bd3b391b843419ff473b94a74b7da.bindPopup(popup_2b2b73605c5349a1af4f767e91d39a8b)
+        ;
+
+        
+    
+    
+        function geo_json_9280cee6e38c4724985bb754dd5e5606_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_9280cee6e38c4724985bb754dd5e5606_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_9280cee6e38c4724985bb754dd5e5606 = L.geoJson(null, {
+                onEachFeature: geo_json_9280cee6e38c4724985bb754dd5e5606_onEachFeature,
+            
+                style: geo_json_9280cee6e38c4724985bb754dd5e5606_styler,
+        });
+
+        function geo_json_9280cee6e38c4724985bb754dd5e5606_add (data) {
+            geo_json_9280cee6e38c4724985bb754dd5e5606
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_9280cee6e38c4724985bb754dd5e5606_add({"bbox": [37.66347, 55.83841, 37.73426, 55.88591], "features": [{"bbox": [37.66347, 55.83841, 37.73426, 55.88591], "geometry": {"coordinates": [[[37.66347, 55.8408], [37.67145, 55.84681], [37.67385, 55.85568], [37.68681, 55.86484], [37.71971, 55.88591], [37.72436, 55.8838], [37.7321, 55.88532], [37.72923, 55.88204], [37.73426, 55.87864], [37.7312, 55.87677], [37.73182, 55.87495], [37.72244, 55.87363], [37.7077, 55.86552], [37.70661, 55.86429], [37.70886, 55.8632], [37.70932, 55.86101], [37.70266, 55.86256], [37.70056, 55.86112], [37.71792, 55.86063], [37.72164, 55.85292], [37.71938, 55.85004], [37.71408, 55.84691], [37.70359, 55.84877], [37.69682, 55.84816], [37.69451, 55.84951], [37.69313, 55.8558], [37.68871, 55.85612], [37.68686, 55.85452], [37.69239, 55.85295], [37.68997, 55.85122], [37.69223, 55.85031], [37.69114, 55.84854], [37.67844, 55.84182], [37.6769, 55.83909], [37.67209, 55.83841], [37.66347, 55.8408]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_1c4c966faa034d2083531c44aa3f79c4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_559bf4d2bed54b4cbf40170e59e88da6 = $(`<div id="html_559bf4d2bed54b4cbf40170e59e88da6" style="width: 100.0%; height: 100.0%;">Ярославский</div>`)[0];
+            popup_1c4c966faa034d2083531c44aa3f79c4.setContent(html_559bf4d2bed54b4cbf40170e59e88da6);
+        
+
+        geo_json_9280cee6e38c4724985bb754dd5e5606.bindPopup(popup_1c4c966faa034d2083531c44aa3f79c4)
+        ;
+
+        
+    
+    
+        function geo_json_721c9ec9fd3e4f5080c8c9eed0916a8e_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_721c9ec9fd3e4f5080c8c9eed0916a8e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_721c9ec9fd3e4f5080c8c9eed0916a8e = L.geoJson(null, {
+                onEachFeature: geo_json_721c9ec9fd3e4f5080c8c9eed0916a8e_onEachFeature,
+            
+                style: geo_json_721c9ec9fd3e4f5080c8c9eed0916a8e_styler,
+        });
+
+        function geo_json_721c9ec9fd3e4f5080c8c9eed0916a8e_add (data) {
+            geo_json_721c9ec9fd3e4f5080c8c9eed0916a8e
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_721c9ec9fd3e4f5080c8c9eed0916a8e_add({"bbox": [37.67127, 55.60685, 37.73044, 55.63672], "features": [{"bbox": [37.67127, 55.60685, 37.73044, 55.63672], "geometry": {"coordinates": [[[37.67127, 55.62009], [37.68422, 55.63042], [37.68756, 55.63672], [37.69094, 55.63386], [37.68975, 55.62801], [37.7145, 55.63145], [37.7293, 55.63116], [37.72736, 55.62679], [37.72876, 55.62573], [37.72776, 55.62024], [37.73044, 55.61303], [37.69264, 55.60685], [37.68062, 55.60998], [37.67791, 55.61433], [37.67985, 55.62171], [37.67127, 55.62009]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_8c1408459a0348c4ae3f85f996fa7f7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_999e777233234abf939650fe108357db = $(`<div id="html_999e777233234abf939650fe108357db" style="width: 100.0%; height: 100.0%;">Орехово-Борисово Северное</div>`)[0];
+            popup_8c1408459a0348c4ae3f85f996fa7f7b.setContent(html_999e777233234abf939650fe108357db);
+        
+
+        geo_json_721c9ec9fd3e4f5080c8c9eed0916a8e.bindPopup(popup_8c1408459a0348c4ae3f85f996fa7f7b)
+        ;
+
+        
+    
+    
+        function geo_json_33e1ca52f82948fe99399fcab7432a51_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "white"};
+            }
+        }
+
+        function geo_json_33e1ca52f82948fe99399fcab7432a51_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_33e1ca52f82948fe99399fcab7432a51 = L.geoJson(null, {
+                onEachFeature: geo_json_33e1ca52f82948fe99399fcab7432a51_onEachFeature,
+            
+                style: geo_json_33e1ca52f82948fe99399fcab7432a51_styler,
+        });
+
+        function geo_json_33e1ca52f82948fe99399fcab7432a51_add (data) {
+            geo_json_33e1ca52f82948fe99399fcab7432a51
+                .addData(data)
+                .addTo(feature_group_e25192de54b64ade9a3a83e3810e54ed);
+        }
+            geo_json_33e1ca52f82948fe99399fcab7432a51_add({"bbox": [37.6926, 55.5888, 37.78511, 55.61915], "features": [{"bbox": [37.6926, 55.5888, 37.78511, 55.61915], "geometry": {"coordinates": [[[37.6926, 55.6045], [37.69264, 55.60685], [37.73044, 55.61303], [37.73138, 55.61121], [37.75355, 55.61132], [37.77249, 55.6156], [37.77585, 55.61827], [37.77478, 55.61915], [37.78511, 55.61701], [37.78013, 55.61616], [37.75383, 55.6016], [37.73315, 55.59285], [37.73217, 55.5888], [37.7245, 55.58931], [37.71704, 55.59572], [37.70281, 55.59929], [37.70011, 55.6024], [37.6926, 55.6045]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_12b9818951d9443eb18ec8a1aaadd76b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0365e196ac834083a647cb9aa7921789 = $(`<div id="html_0365e196ac834083a647cb9aa7921789" style="width: 100.0%; height: 100.0%;">Орехово-Борисово Южное</div>`)[0];
+            popup_12b9818951d9443eb18ec8a1aaadd76b.setContent(html_0365e196ac834083a647cb9aa7921789);
+        
+
+        geo_json_33e1ca52f82948fe99399fcab7432a51.bindPopup(popup_12b9818951d9443eb18ec8a1aaadd76b)
+        ;
+
+        
+    
+    
+            var feature_group_278a277d9f6d4fb293d458ed59fade12 = L.featureGroup(
+                {}
+            ).addTo(map_47ed166d5a1b486582e76a02b4e26553);
+        
+    
+        function geo_json_5015fd52ab64433fbde45539ff5fff56_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "blue"};
+            }
+        }
+
+        function geo_json_5015fd52ab64433fbde45539ff5fff56_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_5015fd52ab64433fbde45539ff5fff56 = L.geoJson(null, {
+                onEachFeature: geo_json_5015fd52ab64433fbde45539ff5fff56_onEachFeature,
+            
+                style: geo_json_5015fd52ab64433fbde45539ff5fff56_styler,
+        });
+
+        function geo_json_5015fd52ab64433fbde45539ff5fff56_add (data) {
+            geo_json_5015fd52ab64433fbde45539ff5fff56
+                .addData(data)
+                .addTo(feature_group_278a277d9f6d4fb293d458ed59fade12);
+        }
+            geo_json_5015fd52ab64433fbde45539ff5fff56_add({"bbox": [37.50389, 55.75985, 37.55503, 55.80374], "features": [{"bbox": [37.50389, 55.75985, 37.55503, 55.80374], "geometry": {"coordinates": [[[37.50389, 55.79112], [37.51835, 55.79349], [37.52044, 55.80374], [37.53119, 55.80071], [37.55117, 55.79191], [37.54084, 55.78496], [37.55075, 55.77749], [37.55503, 55.77612], [37.55192, 55.77341], [37.53896, 55.77113], [37.53606, 55.7661], [37.52429, 55.75985], [37.50744, 55.77682], [37.50389, 55.79112]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_d7556de304d9484e9c9277d6791f2f21 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_feec83a6bffe4c2e9bf452e1ab3455c5 = $(`<div id="html_feec83a6bffe4c2e9bf452e1ab3455c5" style="width: 100.0%; height: 100.0%;">Хорошёвский</div>`)[0];
+            popup_d7556de304d9484e9c9277d6791f2f21.setContent(html_feec83a6bffe4c2e9bf452e1ab3455c5);
+        
+
+        geo_json_5015fd52ab64433fbde45539ff5fff56.bindPopup(popup_d7556de304d9484e9c9277d6791f2f21)
+        ;
+
+        
+    
+    
+        function geo_json_4a19889cac2c4095959dca91cdc25ebd_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "blue"};
+            }
+        }
+
+        function geo_json_4a19889cac2c4095959dca91cdc25ebd_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_4a19889cac2c4095959dca91cdc25ebd = L.geoJson(null, {
+                onEachFeature: geo_json_4a19889cac2c4095959dca91cdc25ebd_onEachFeature,
+            
+                style: geo_json_4a19889cac2c4095959dca91cdc25ebd_styler,
+        });
+
+        function geo_json_4a19889cac2c4095959dca91cdc25ebd_add (data) {
+            geo_json_4a19889cac2c4095959dca91cdc25ebd
+                .addData(data)
+                .addTo(feature_group_278a277d9f6d4fb293d458ed59fade12);
+        }
+            geo_json_4a19889cac2c4095959dca91cdc25ebd_add({"bbox": [37.51393, 55.7444, 37.60967, 55.77552], "features": [{"bbox": [37.51393, 55.7444, 37.60967, 55.77552], "geometry": {"coordinates": [[[37.51393, 55.75842], [37.52256, 55.76169], [37.52429, 55.75985], [37.53212, 55.76337], [37.53606, 55.7661], [37.53792, 55.77037], [37.54186, 55.77241], [37.57523, 55.77552], [37.57711, 55.77316], [37.58334, 55.7753], [37.59659, 55.7676], [37.59522, 55.76686], [37.59899, 55.76429], [37.60424, 55.7632], [37.60967, 55.75827], [37.60602, 55.75403], [37.60237, 55.75359], [37.58446, 55.75811], [37.58386, 55.7552], [37.57681, 55.75521], [37.57206, 55.75202], [37.56018, 55.75308], [37.54037, 55.74546], [37.5324, 55.7444], [37.52364, 55.74633], [37.51393, 55.75842]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_51232eec41b249f1a907d778d69dd861 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08ab83c64cd44fadafa910a7cb16d3ed = $(`<div id="html_08ab83c64cd44fadafa910a7cb16d3ed" style="width: 100.0%; height: 100.0%;">Пресненский</div>`)[0];
+            popup_51232eec41b249f1a907d778d69dd861.setContent(html_08ab83c64cd44fadafa910a7cb16d3ed);
+        
+
+        geo_json_4a19889cac2c4095959dca91cdc25ebd.bindPopup(popup_51232eec41b249f1a907d778d69dd861)
+        ;
+
+        
+    
+    
+        function geo_json_e2978309631c438ca41b5c6c32b30a47_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "blue"};
+            }
+        }
+
+        function geo_json_e2978309631c438ca41b5c6c32b30a47_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_e2978309631c438ca41b5c6c32b30a47 = L.geoJson(null, {
+                onEachFeature: geo_json_e2978309631c438ca41b5c6c32b30a47_onEachFeature,
+            
+                style: geo_json_e2978309631c438ca41b5c6c32b30a47_styler,
+        });
+
+        function geo_json_e2978309631c438ca41b5c6c32b30a47_add (data) {
+            geo_json_e2978309631c438ca41b5c6c32b30a47
+                .addData(data)
+                .addTo(feature_group_278a277d9f6d4fb293d458ed59fade12);
+        }
+            geo_json_e2978309631c438ca41b5c6c32b30a47_add({"bbox": [37.54108, 55.71076, 37.61229, 55.75041], "features": [{"bbox": [37.54108, 55.71076, 37.61229, 55.75041], "geometry": {"coordinates": [[[37.54108, 55.72013], [37.54186, 55.72404], [37.5449, 55.72706], [37.56575, 55.7364], [37.57413, 55.74545], [37.58746, 55.74411], [37.58591, 55.74631], [37.59936, 55.74708], [37.59972, 55.74889], [37.60295, 55.74859], [37.6043, 55.75041], [37.61229, 55.7468], [37.60832, 55.74312], [37.60674, 55.73809], [37.59803, 55.73294], [37.58551, 55.71934], [37.57493, 55.71312], [37.5654, 55.71076], [37.5529, 55.71097], [37.54333, 55.71562], [37.54108, 55.72013]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_c10492f55ff04ddea83c37cfcd0a6864 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9540cbe425274cb7980cdac604d12552 = $(`<div id="html_9540cbe425274cb7980cdac604d12552" style="width: 100.0%; height: 100.0%;">Хамовники</div>`)[0];
+            popup_c10492f55ff04ddea83c37cfcd0a6864.setContent(html_9540cbe425274cb7980cdac604d12552);
+        
+
+        geo_json_e2978309631c438ca41b5c6c32b30a47.bindPopup(popup_c10492f55ff04ddea83c37cfcd0a6864)
+        ;
+
+        
+    
+    
+        function geo_json_9c818224d1c641829b0be627c00143e9_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "blue"};
+            }
+        }
+
+        function geo_json_9c818224d1c641829b0be627c00143e9_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_9c818224d1c641829b0be627c00143e9 = L.geoJson(null, {
+                onEachFeature: geo_json_9c818224d1c641829b0be627c00143e9_onEachFeature,
+            
+                style: geo_json_9c818224d1c641829b0be627c00143e9_styler,
+        });
+
+        function geo_json_9c818224d1c641829b0be627c00143e9_add (data) {
+            geo_json_9c818224d1c641829b0be627c00143e9
+                .addData(data)
+                .addTo(feature_group_278a277d9f6d4fb293d458ed59fade12);
+        }
+            geo_json_9c818224d1c641829b0be627c00143e9_add({"bbox": [37.57206, 55.74371, 37.61221, 55.75811], "features": [{"bbox": [37.57206, 55.74371, 37.61221, 55.75811], "geometry": {"coordinates": [[[37.57206, 55.75202], [37.57681, 55.75521], [37.58386, 55.7552], [37.58446, 55.75811], [37.60237, 55.75359], [37.60602, 55.75403], [37.6074, 55.75615], [37.61221, 55.75459], [37.60882, 55.74923], [37.6043, 55.75041], [37.60295, 55.74859], [37.59972, 55.74889], [37.59936, 55.74708], [37.58776, 55.74681], [37.58591, 55.74631], [37.58746, 55.74411], [37.58381, 55.74371], [37.58305, 55.74546], [37.57413, 55.74545], [37.57449, 55.74886], [37.57206, 55.75202]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_99bced4fc60045d6b189fd33e5429cca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58f0f9e0e10940019043cbffed2feaed = $(`<div id="html_58f0f9e0e10940019043cbffed2feaed" style="width: 100.0%; height: 100.0%;">Арбат</div>`)[0];
+            popup_99bced4fc60045d6b189fd33e5429cca.setContent(html_58f0f9e0e10940019043cbffed2feaed);
+        
+
+        geo_json_9c818224d1c641829b0be627c00143e9.bindPopup(popup_99bced4fc60045d6b189fd33e5429cca)
+        ;
+
+        
+    
+    
+        function geo_json_7d3df7ecdde34a4b90fbe58a732ca19b_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "blue"};
+            }
+        }
+
+        function geo_json_7d3df7ecdde34a4b90fbe58a732ca19b_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_7d3df7ecdde34a4b90fbe58a732ca19b = L.geoJson(null, {
+                onEachFeature: geo_json_7d3df7ecdde34a4b90fbe58a732ca19b_onEachFeature,
+            
+                style: geo_json_7d3df7ecdde34a4b90fbe58a732ca19b_styler,
+        });
+
+        function geo_json_7d3df7ecdde34a4b90fbe58a732ca19b_add (data) {
+            geo_json_7d3df7ecdde34a4b90fbe58a732ca19b
+                .addData(data)
+                .addTo(feature_group_278a277d9f6d4fb293d458ed59fade12);
+        }
+            geo_json_7d3df7ecdde34a4b90fbe58a732ca19b_add({"bbox": [37.57523, 55.7468, 37.635, 55.79258], "features": [{"bbox": [37.57523, 55.7468, 37.635, 55.79258], "geometry": {"coordinates": [[[37.57523, 55.77552], [37.58479, 55.77987], [37.58774, 55.79258], [37.59925, 55.79248], [37.60171, 55.78514], [37.60468, 55.78529], [37.61705, 55.7803], [37.61894, 55.77361], [37.621, 55.77341], [37.62153, 55.76697], [37.61986, 55.7652], [37.62155, 55.75912], [37.62894, 55.75984], [37.6279, 55.75954], [37.635, 55.7539], [37.63211, 55.74885], [37.62136, 55.74882], [37.61229, 55.7468], [37.60839, 55.74926], [37.61221, 55.75459], [37.60704, 55.75625], [37.60967, 55.75829], [37.60424, 55.7632], [37.59899, 55.76429], [37.59522, 55.76686], [37.59659, 55.7676], [37.58334, 55.7753], [37.57711, 55.77316], [37.57523, 55.77552]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_9fcbb215b2764f759ef213ec3a02b3c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4c5cd4d99714d43846994603e9c39f0 = $(`<div id="html_d4c5cd4d99714d43846994603e9c39f0" style="width: 100.0%; height: 100.0%;">Тверской</div>`)[0];
+            popup_9fcbb215b2764f759ef213ec3a02b3c5.setContent(html_d4c5cd4d99714d43846994603e9c39f0);
+        
+
+        geo_json_7d3df7ecdde34a4b90fbe58a732ca19b.bindPopup(popup_9fcbb215b2764f759ef213ec3a02b3c5)
+        ;
+
+        
+    
+    
+        function geo_json_b7c93e6f0b574495a2f6e8a3f31eff6a_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "blue"};
+            }
+        }
+
+        function geo_json_b7c93e6f0b574495a2f6e8a3f31eff6a_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_b7c93e6f0b574495a2f6e8a3f31eff6a = L.geoJson(null, {
+                onEachFeature: geo_json_b7c93e6f0b574495a2f6e8a3f31eff6a_onEachFeature,
+            
+                style: geo_json_b7c93e6f0b574495a2f6e8a3f31eff6a_styler,
+        });
+
+        function geo_json_b7c93e6f0b574495a2f6e8a3f31eff6a_add (data) {
+            geo_json_b7c93e6f0b574495a2f6e8a3f31eff6a
+                .addData(data)
+                .addTo(feature_group_278a277d9f6d4fb293d458ed59fade12);
+        }
+            geo_json_b7c93e6f0b574495a2f6e8a3f31eff6a_add({"bbox": [37.60622, 55.68427, 37.66781, 55.7295], "features": [{"bbox": [37.60622, 55.68427, 37.66781, 55.7295], "geometry": {"coordinates": [[[37.60622, 55.71094], [37.60834, 55.71675], [37.61366, 55.71663], [37.61376, 55.71984], [37.63584, 55.72202], [37.63646, 55.72353], [37.64377, 55.72243], [37.64602, 55.7295], [37.65421, 55.72882], [37.65672, 55.72637], [37.66313, 55.72676], [37.66366, 55.71814], [37.66781, 55.70528], [37.66524, 55.68613], [37.63959, 55.68427], [37.6332, 55.68551], [37.62831, 55.694], [37.62857, 55.70526], [37.62099, 55.70605], [37.61122, 55.70433], [37.60749, 55.70748], [37.60622, 55.71094]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_3a9e61f273e445d29d545930177a6fe9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_868bae3bec5041baa8cfdde7e84e1e75 = $(`<div id="html_868bae3bec5041baa8cfdde7e84e1e75" style="width: 100.0%; height: 100.0%;">Даниловский</div>`)[0];
+            popup_3a9e61f273e445d29d545930177a6fe9.setContent(html_868bae3bec5041baa8cfdde7e84e1e75);
+        
+
+        geo_json_b7c93e6f0b574495a2f6e8a3f31eff6a.bindPopup(popup_3a9e61f273e445d29d545930177a6fe9)
+        ;
+
+        
+    
+    
+        function geo_json_915e0552aa8643548359f0fc5bf7e87e_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "blue"};
+            }
+        }
+
+        function geo_json_915e0552aa8643548359f0fc5bf7e87e_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_915e0552aa8643548359f0fc5bf7e87e = L.geoJson(null, {
+                onEachFeature: geo_json_915e0552aa8643548359f0fc5bf7e87e_onEachFeature,
+            
+                style: geo_json_915e0552aa8643548359f0fc5bf7e87e_styler,
+        });
+
+        function geo_json_915e0552aa8643548359f0fc5bf7e87e_add (data) {
+            geo_json_915e0552aa8643548359f0fc5bf7e87e
+                .addData(data)
+                .addTo(feature_group_278a277d9f6d4fb293d458ed59fade12);
+        }
+            geo_json_915e0552aa8643548359f0fc5bf7e87e_add({"bbox": [37.61225, 55.75912, 37.6449, 55.79714], "features": [{"bbox": [37.61225, 55.75912, 37.6449, 55.79714], "geometry": {"coordinates": [[[37.61225, 55.78259], [37.61515, 55.78316], [37.61672, 55.78615], [37.61631, 55.79314], [37.63462, 55.79186], [37.63499, 55.79714], [37.64296, 55.79298], [37.64026, 55.79244], [37.6449, 55.77975], [37.64131, 55.77967], [37.63725, 55.772], [37.63239, 55.77262], [37.63129, 55.76627], [37.62868, 55.76311], [37.63061, 55.76341], [37.63009, 55.76077], [37.62155, 55.75912], [37.61986, 55.7652], [37.62153, 55.76697], [37.621, 55.77341], [37.61894, 55.77361], [37.61705, 55.7803], [37.61225, 55.78259]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_3bc93937c7f749b0962a5d9bf62923df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16dcfd82432c41e2be9a0f9ac26a4b79 = $(`<div id="html_16dcfd82432c41e2be9a0f9ac26a4b79" style="width: 100.0%; height: 100.0%;">Мещанский</div>`)[0];
+            popup_3bc93937c7f749b0962a5d9bf62923df.setContent(html_16dcfd82432c41e2be9a0f9ac26a4b79);
+        
+
+        geo_json_915e0552aa8643548359f0fc5bf7e87e.bindPopup(popup_3bc93937c7f749b0962a5d9bf62923df)
+        ;
+
+        
+    
+    
+        function geo_json_7987f358520a4c98873efa3b81e85a9f_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "blue"};
+            }
+        }
+
+        function geo_json_7987f358520a4c98873efa3b81e85a9f_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_7987f358520a4c98873efa3b81e85a9f = L.geoJson(null, {
+                onEachFeature: geo_json_7987f358520a4c98873efa3b81e85a9f_onEachFeature,
+            
+                style: geo_json_7987f358520a4c98873efa3b81e85a9f_styler,
+        });
+
+        function geo_json_7987f358520a4c98873efa3b81e85a9f_add (data) {
+            geo_json_7987f358520a4c98873efa3b81e85a9f
+                .addData(data)
+                .addTo(feature_group_278a277d9f6d4fb293d458ed59fade12);
+        }
+            geo_json_7987f358520a4c98873efa3b81e85a9f_add({"bbox": [37.61513, 55.72028, 37.65421, 55.74908], "features": [{"bbox": [37.61513, 55.72028, 37.65421, 55.74908], "geometry": {"coordinates": [[[37.61513, 55.72688], [37.61991, 55.7273], [37.61961, 55.72924], [37.62395, 55.73009], [37.62455, 55.74543], [37.62635, 55.746], [37.62506, 55.74908], [37.63114, 55.74903], [37.63927, 55.74658], [37.64487, 55.74113], [37.65049, 55.73128], [37.65421, 55.72882], [37.64602, 55.7295], [37.64377, 55.72243], [37.63646, 55.72353], [37.63584, 55.72202], [37.61777, 55.72028], [37.61513, 55.72688]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_d83767b8818a4931b2f3002a540d8017 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_82b979453c9d4ddd82266e764a1c6fb0 = $(`<div id="html_82b979453c9d4ddd82266e764a1c6fb0" style="width: 100.0%; height: 100.0%;">Замоскворечье</div>`)[0];
+            popup_d83767b8818a4931b2f3002a540d8017.setContent(html_82b979453c9d4ddd82266e764a1c6fb0);
+        
+
+        geo_json_7987f358520a4c98873efa3b81e85a9f.bindPopup(popup_d83767b8818a4931b2f3002a540d8017)
+        ;
+
+        
+    
+    
+        function geo_json_22ebd99266a545e3abf14b9228287335_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "blue"};
+            }
+        }
+
+        function geo_json_22ebd99266a545e3abf14b9228287335_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_22ebd99266a545e3abf14b9228287335 = L.geoJson(null, {
+                onEachFeature: geo_json_22ebd99266a545e3abf14b9228287335_onEachFeature,
+            
+                style: geo_json_22ebd99266a545e3abf14b9228287335_styler,
+        });
+
+        function geo_json_22ebd99266a545e3abf14b9228287335_add (data) {
+            geo_json_22ebd99266a545e3abf14b9228287335
+                .addData(data)
+                .addTo(feature_group_278a277d9f6d4fb293d458ed59fade12);
+        }
+            geo_json_22ebd99266a545e3abf14b9228287335_add({"bbox": [37.6279, 55.75075, 37.71352, 55.7816], "features": [{"bbox": [37.6279, 55.75075, 37.71352, 55.7816], "geometry": {"coordinates": [[[37.6279, 55.75954], [37.6447, 55.76851], [37.66304, 55.76974], [37.66444, 55.77334], [37.6759, 55.77835], [37.68011, 55.77712], [37.68482, 55.7816], [37.70318, 55.78152], [37.70879, 55.77962], [37.71352, 55.77526], [37.69738, 55.7668], [37.69219, 55.76948], [37.68904, 55.76777], [37.68601, 55.7622], [37.68259, 55.75954], [37.67133, 55.75868], [37.67302, 55.75317], [37.67053, 55.75075], [37.65828, 55.75473], [37.64351, 55.7527], [37.63518, 55.75385], [37.6279, 55.75954]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_3b555dd8a1174644a6521c07fce205ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e452a80fc2634f5d8ae431583f9c97f6 = $(`<div id="html_e452a80fc2634f5d8ae431583f9c97f6" style="width: 100.0%; height: 100.0%;">Басманный</div>`)[0];
+            popup_3b555dd8a1174644a6521c07fce205ff.setContent(html_e452a80fc2634f5d8ae431583f9c97f6);
+        
+
+        geo_json_22ebd99266a545e3abf14b9228287335.bindPopup(popup_3b555dd8a1174644a6521c07fce205ff)
+        ;
+
+        
+    
+    
+        function geo_json_2773a0bd1ebb40f98528a82a0aa55db2_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"fillColor": "blue"};
+            }
+        }
+
+        function geo_json_2773a0bd1ebb40f98528a82a0aa55db2_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_2773a0bd1ebb40f98528a82a0aa55db2 = L.geoJson(null, {
+                onEachFeature: geo_json_2773a0bd1ebb40f98528a82a0aa55db2_onEachFeature,
+            
+                style: geo_json_2773a0bd1ebb40f98528a82a0aa55db2_styler,
+        });
+
+        function geo_json_2773a0bd1ebb40f98528a82a0aa55db2_add (data) {
+            geo_json_2773a0bd1ebb40f98528a82a0aa55db2
+                .addData(data)
+                .addTo(feature_group_278a277d9f6d4fb293d458ed59fade12);
+        }
+            geo_json_2773a0bd1ebb40f98528a82a0aa55db2_add({"bbox": [37.63211, 55.7258, 37.69984, 55.75424], "features": [{"bbox": [37.63211, 55.7258, 37.69984, 55.75424], "geometry": {"coordinates": [[[37.63211, 55.74885], [37.635, 55.7539], [37.6429, 55.75269], [37.66242, 55.75424], [37.69234, 55.74387], [37.69708, 55.74079], [37.69984, 55.73632], [37.6937, 55.7293], [37.68536, 55.733], [37.68584, 55.73011], [37.67064, 55.7258], [37.66581, 55.73164], [37.66069, 55.7307], [37.66313, 55.72676], [37.65672, 55.72637], [37.65049, 55.73128], [37.64131, 55.74501], [37.63211, 55.74885]]], "type": "Polygon"}, "id": "0", "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+        var popup_899ce61f17be4e4e953766f9c5bfdf6c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_976aeda24bce41e085eceea96da1eae4 = $(`<div id="html_976aeda24bce41e085eceea96da1eae4" style="width: 100.0%; height: 100.0%;">Таганский</div>`)[0];
+            popup_899ce61f17be4e4e953766f9c5bfdf6c.setContent(html_976aeda24bce41e085eceea96da1eae4);
+        
+
+        geo_json_2773a0bd1ebb40f98528a82a0aa55db2.bindPopup(popup_899ce61f17be4e4e953766f9c5bfdf6c)
+        ;
+
+        
+    
+    
+            var layer_control_99aa60f031f94b45bdef34fa1b898561 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_65bc7a2aef924a5cab93e5dc6cbd1f6b,
+                },
+                overlays :  {
+                    "\u0440\u0430\u0439\u043e\u043d\u044b \u0441 \u043f\u043e\u043f\u0443\u043b\u044f\u0440\u043d\u043e\u0439 \u0443\u043b\u0438\u0446\u0435\u0439" : feature_group_e25192de54b64ade9a3a83e3810e54ed,
+                    "\u043f\u043e\u043f\u0443\u043b\u044f\u0440\u043d\u044b\u0435 \u0440\u0430\u0439\u043e\u043d\u044b" : feature_group_278a277d9f6d4fb293d458ed59fade12,
+                },
+            };
+            L.control.layers(
+                layer_control_99aa60f031f94b45bdef34fa1b898561.base_layers,
+                layer_control_99aa60f031f94b45bdef34fa1b898561.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_47ed166d5a1b486582e76a02b4e26553);
+        
+</script>
