@@ -11,3 +11,7 @@
 |[Анализ A/A/B теста и пользовательского поведения в мобильном приложении](https://github.com/oleolegka/praktikum/tree/master/aab%20test)|На основе данных использования мобильного приложения для продажи продуктов питания проанализировать воронку продаж, а также оценить результаты A/A/B-тестирования |`pandas` `numpy` `matplotlib` `seaborn` `scipy`|
 |[Исследование и визуализация текущего состояния рынка общепита в Москве](https://github.com/oleolegka/praktikum/tree/master/eatery%20mapping)|Клиент хочет открыть кафе с роботами-официантами — необходимо проанализировать текущее состояние рынка и представить данные в читаемом виде|`pandas` `numpy` `matplotlib` `seaborn` `geopandas` `folium` `branca`|
 |[Различные SQL запросы](https://github.com/oleolegka/praktikum/tree/master/sql%20samples)|Подключение к датабазе, её создание, выполнение запросов|`pandas` `sqlalchemy` `sqlite3`|
+|[Создание дашборда](https://github.com/oleolegka/praktikum/tree/master/dashboard)|Получение данных из ДБ, построение дашборда в Tableau Pulic|`pandas` `sqlalchemy` `Tableau`
+|
+
+
